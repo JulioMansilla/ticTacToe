@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	alert("Welcome to Tic Tac Toe. Player X, begin.");
-
 	var counter = 1;
 
 	$(document).on('click', '.square', function() {
@@ -18,9 +16,9 @@ $(document).ready(function() {
 	});
 
 	$(document).on('click', '#reset', function() {
-		alert("Gameboard reset.");
 		counter = 1;
-
+		$(".squareValue").html("");
+		alert("Gameboard reset.");
 	});
 
 });
